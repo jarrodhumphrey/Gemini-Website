@@ -1,0 +1,62 @@
+Create a beginner-friendly markdown guide titled "Getting Wired Up on macOS: VS Code + Node + GitHub + Gemini CLI".
+
+Audience:
+- Undergraduate beginners using macOS
+- They already installed VS Code, Node.js, and Gemini CLI
+- They have GitHub accounts
+
+Output requirements:
+- Produce a clean markdown file suitable to save as SETUP_MAC.md
+- Use clear headings and numbered steps
+- Include checklists and bash code blocks
+- Include a short "Quick Test" after each section
+- Keep instructions concise and actionable
+
+Include these sections in order:
+
+1. Verify installations in macOS Terminal
+   - node -v
+   - npm -v
+   - git --version
+   - gemini --version
+   - Explain what success looks like
+
+2. Configure Git (first-time setup)
+   - git config --global user.name
+   - git config --global user.email
+   - git config --global init.defaultBranch main
+
+3. Create and connect SSH key to GitHub (macOS)
+   - ssh-keygen with ed25519
+   - Start ssh-agent
+   - Add key to agent
+   - Copy public key to clipboard
+   - Add to GitHub SSH settings
+   - Test with ssh -T git@github.com
+
+4. Sign into GitHub in VS Code (macOS)
+   - Use VS Code account menu
+   - Open Source Control panel
+
+5. Create a project folder and initialize git
+   - mkdir, cd
+   - git init
+   - Create README.md
+   - git add and commit
+
+6. Create GitHub repo and push code
+   - Add remote origin
+   - Push to main
+
+7. Run Gemini CLI inside the project
+   - Open VS Code terminal
+   - Run a simple Gemini command to summarize README
+   - Create a TODO.md file using Gemini
+
+8. Troubleshooting (macOS)
+   - permission denied (publickey)
+   - command not found
+   - Gemini authentication issues
+
+Finish with a final checklist confirming everything works.
+Do not include extra explanation — only clear steps.
